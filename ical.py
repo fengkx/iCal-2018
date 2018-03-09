@@ -10,7 +10,7 @@ def main():
     code = getHTMLText()
     infoDictList = []
     parser(code, infoDictList)
-    print(infoDictList)
+    # print(infoDictList)
     for item in infoDictList:
         print(item)
     print("end")
