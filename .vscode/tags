@@ -1,0 +1,511 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Alarm	../icalendar/src/icalendar/cal.py	/^class Alarm(Component):$/;"	kind:class	line:668
+BOOL_MAP	../icalendar/src/icalendar/prop.py	/^    BOOL_MAP = CaselessDict({'true': True, 'false': False})$/;"	kind:variable	line:161
+Calendar	../icalendar/src/icalendar/cal.py	/^class Calendar(Component):$/;"	kind:class	line:681
+CaselessDict	../icalendar/src/icalendar/caselessdict.py	/^class CaselessDict(OrderedDict):$/;"	kind:class	line:25
+Component	../icalendar/src/icalendar/cal.py	/^class Component(CaselessDict):$/;"	kind:class	line:60
+ComponentFactory	../icalendar/src/icalendar/cal.py	/^class ComponentFactory(CaselessDict):$/;"	kind:class	line:29
+Contentline	../icalendar/src/icalendar/parser.py	/^class Contentline(compat.unicode_type):$/;"	kind:class	line:288
+Contentlines	../icalendar/src/icalendar/parser.py	/^class Contentlines(list):$/;"	kind:class	line:372
+DATETIME_PART	../icalendar/src/icalendar/prop.py	/^DATETIME_PART = '(?:%s)?(?:%s)?' % (DATE_PART, TIME_PART)$/;"	kind:variable	line:70
+DATE_PART	../icalendar/src/icalendar/prop.py	/^DATE_PART = r'(\\d+)D'$/;"	kind:variable	line:68
+DEFAULT_ENCODING	../icalendar/src/icalendar/parser_tools.py	/^DEFAULT_ENCODING = 'utf-8'$/;"	kind:variable	line:6
+DSTDIFF	../icalendar/src/icalendar/prop.py	/^DSTDIFF = DSTOFFSET - STDOFFSET$/;"	kind:variable	line:89
+DSTOFFSET	../icalendar/src/icalendar/prop.py	/^    DSTOFFSET = STDOFFSET$/;"	kind:variable	line:88
+DSTOFFSET	../icalendar/src/icalendar/prop.py	/^    DSTOFFSET = timedelta(seconds=-_time.altzone)$/;"	kind:variable	line:86
+DURATION_REGEX	../icalendar/src/icalendar/prop.py	/^DURATION_REGEX = re.compile(r'([-+]?)P(?:%s|%s)$'$/;"	kind:variable	line:72
+Event	../icalendar/src/icalendar/cal.py	/^class Event(Component):$/;"	kind:class	line:443
+FOLD	../icalendar/src/icalendar/parser.py	/^FOLD = re.compile(b'(\\r?\\n)+[ \\t]')$/;"	kind:variable	line:119
+FixedOffset	../icalendar/src/icalendar/prop.py	/^class FixedOffset(tzinfo):$/;"	kind:class	line:92
+FreeBusy	../icalendar/src/icalendar/cal.py	/^class FreeBusy(Component):$/;"	kind:class	line:501
+HOUR	../icalendar/src/icalendar/prop.py	/^HOUR = timedelta(hours=1)$/;"	kind:variable	line:83
+INLINE	../icalendar/src/icalendar/cal.py	/^INLINE = CaselessDict({$/;"	kind:variable	line:51
+IcalendarTestCase	../icalendar/src/icalendar/tests/test_icalendar.py	/^class IcalendarTestCase (unittest.TestCase):$/;"	kind:class	line:11
+Journal	../icalendar/src/icalendar/cal.py	/^class Journal(Component):$/;"	kind:class	line:486
+LocalTimezone	../icalendar/src/icalendar/prop.py	/^class LocalTimezone(tzinfo):$/;"	kind:class	line:109
+NAME	../icalendar/src/icalendar/parser.py	/^NAME = re.compile(r'[\\w.-]+')$/;"	kind:variable	line:115
+NEWLINE	../icalendar/src/icalendar/parser.py	/^NEWLINE = re.compile(r'\\r?\\n')$/;"	kind:variable	line:121
+Parameters	../icalendar/src/icalendar/parser.py	/^class Parameters(CaselessDict):$/;"	kind:class	line:185
+QUNSAFE_CHAR	../icalendar/src/icalendar/parser.py	/^QUNSAFE_CHAR = re.compile('[\\x00-\\x08\\x0a-\\x1f\\x7F"]')$/;"	kind:variable	line:118
+QUOTABLE	../icalendar/src/icalendar/parser.py	/^QUOTABLE = re.compile("[,;: ’']")$/;"	kind:variable	line:139
+SEQUENCE_TYPES	../icalendar/src/icalendar/parser_tools.py	/^SEQUENCE_TYPES = (list, tuple)$/;"	kind:variable	line:5
+STDOFFSET	../icalendar/src/icalendar/prop.py	/^STDOFFSET = timedelta(seconds=-_time.timezone)$/;"	kind:variable	line:84
+TIME_PART	../icalendar/src/icalendar/prop.py	/^TIME_PART = r'T(?:(\\d+)H)?(?:(\\d+)M)?(?:(\\d+)S)?'$/;"	kind:variable	line:69
+TestCal	../icalendar/src/icalendar/tests/test_unit_cal.py	/^class TestCal(unittest.TestCase):$/;"	kind:class	line:361
+TestCalComponent	../icalendar/src/icalendar/tests/test_unit_cal.py	/^class TestCalComponent(unittest.TestCase):$/;"	kind:class	line:13
+TestCaselessdict	../icalendar/src/icalendar/tests/test_unit_caselessdict.py	/^class TestCaselessdict(unittest.TestCase):$/;"	kind:class	line:7
+TestEncoding	../icalendar/src/icalendar/tests/test_encoding.py	/^class TestEncoding(unittest.TestCase):$/;"	kind:class	line:12
+TestEncoding	../icalendar/src/icalendar/tests/test_icalendar.py	/^class TestEncoding(unittest.TestCase):$/;"	kind:class	line:293
+TestFuzzing	../icalendar/src/icalendar/tests/hypothesis/test_fuzzing.py	/^class TestFuzzing(unittest.TestCase):$/;"	kind:class	line:21
+TestIssues	../icalendar/src/icalendar/tests/test_fixed_issues.py	/^class TestIssues(unittest.TestCase):$/;"	kind:class	line:13
+TestMultiple	../icalendar/src/icalendar/tests/test_multiple.py	/^class TestMultiple(unittest.TestCase):$/;"	kind:class	line:9
+TestParserTools	../icalendar/src/icalendar/tests/test_unit_parser_tools.py	/^class TestParserTools(unittest.TestCase):$/;"	kind:class	line:9
+TestProp	../icalendar/src/icalendar/tests/test_unit_prop.py	/^class TestProp(unittest.TestCase):$/;"	kind:class	line:16
+TestPropertyParams	../icalendar/src/icalendar/tests/test_property_params.py	/^class TestPropertyParams(unittest.TestCase):$/;"	kind:class	line:14
+TestPropertyValues	../icalendar/src/icalendar/tests/test_unit_prop.py	/^class TestPropertyValues(unittest.TestCase):$/;"	kind:class	line:483
+TestRecurrence	../icalendar/src/icalendar/tests/test_recurrence.py	/^class TestRecurrence(unittest.TestCase):$/;"	kind:class	line:11
+TestTime	../icalendar/src/icalendar/tests/test_time.py	/^class TestTime(unittest.TestCase):$/;"	kind:class	line:9
+TestTimezoneCreation	../icalendar/src/icalendar/tests/test_timezoned.py	/^class TestTimezoneCreation(unittest.TestCase):$/;"	kind:class	line:150
+TestTimezoned	../icalendar/src/icalendar/tests/test_timezoned.py	/^class TestTimezoned(unittest.TestCase):$/;"	kind:class	line:13
+TestTools	../icalendar/src/icalendar/tests/test_unit_tools.py	/^class TestTools(unittest.TestCase):$/;"	kind:class	line:6
+TestWindowsOlsonMapping	../icalendar/src/icalendar/tests/test_unit_prop.py	/^class TestWindowsOlsonMapping(unittest.TestCase):$/;"	kind:class	line:504
+Timezone	../icalendar/src/icalendar/cal.py	/^class Timezone(Component):$/;"	kind:class	line:513
+TimezoneDaylight	../icalendar/src/icalendar/cal.py	/^class TimezoneDaylight(Component):$/;"	kind:class	line:661
+TimezoneStandard	../icalendar/src/icalendar/cal.py	/^class TimezoneStandard(Component):$/;"	kind:class	line:654
+Todo	../icalendar/src/icalendar/cal.py	/^class Todo(Component):$/;"	kind:class	line:468
+TypesFactory	../icalendar/src/icalendar/prop.py	/^class TypesFactory(CaselessDict):$/;"	kind:class	line:870
+UIDGenerator	../icalendar/src/icalendar/tools.py	/^class UIDGenerator(object):$/;"	kind:class	line:12
+UNSAFE_CHAR	../icalendar/src/icalendar/parser.py	/^UNSAFE_CHAR = re.compile('[\\x00-\\x08\\x0a-\\x1f\\x7F",:;]')$/;"	kind:variable	line:117
+WEEKDAY_RULE	../icalendar/src/icalendar/prop.py	/^WEEKDAY_RULE = re.compile(r'(?P<signal>[+-]?)(?P<relative>[\\d]?)'$/;"	kind:variable	line:74
+WEEKS_PART	../icalendar/src/icalendar/prop.py	/^WEEKS_PART = r'(\\d+)W'$/;"	kind:variable	line:71
+WINDOWS_TO_OLSON	../icalendar/src/icalendar/windows_to_olson.py	/^WINDOWS_TO_OLSON = {$/;"	kind:variable	line:12
+Week	../ical.py	/^Week =('一','二','三','四','五','六','日')$/;"	kind:variable	line:6
+ZERO	../icalendar/src/icalendar/prop.py	/^ZERO = timedelta(0)$/;"	kind:variable	line:82
+__bool__	../icalendar/src/icalendar/cal.py	/^    def __bool__(self):$/;"	kind:member	line:98
+__cmp__	../icalendar/src/icalendar/prop.py	/^    def __cmp__(self, other):$/;"	kind:member	line:519
+__contains__	../icalendar/src/icalendar/caselessdict.py	/^    def __contains__(self, key):$/;"	kind:member	line:52
+__delitem__	../icalendar/src/icalendar/caselessdict.py	/^    def __delitem__(self, key):$/;"	kind:member	line:48
+__eq__	../icalendar/src/icalendar/caselessdict.py	/^    def __eq__(self, other):$/;"	kind:member	line:90
+__getitem__	../icalendar/src/icalendar/caselessdict.py	/^    def __getitem__(self, key):$/;"	kind:member	line:40
+__init__	../icalendar/src/icalendar/cal.py	/^    def __init__(self, *args, **kwargs):$/;"	kind:member	line:34
+__init__	../icalendar/src/icalendar/cal.py	/^    def __init__(self, *args, **kwargs):$/;"	kind:member	line:79
+__init__	../icalendar/src/icalendar/caselessdict.py	/^    def __init__(self, *args, **kwargs):$/;"	kind:member	line:30
+__init__	../icalendar/src/icalendar/prop.py	/^    def __init__(self, *args):$/;"	kind:member	line:724
+__init__	../icalendar/src/icalendar/prop.py	/^    def __init__(self, *args, **kwargs):$/;"	kind:member	line:654
+__init__	../icalendar/src/icalendar/prop.py	/^    def __init__(self, *args, **kwargs):$/;"	kind:member	line:878
+__init__	../icalendar/src/icalendar/prop.py	/^    def __init__(self, dt):$/;"	kind:member	line:276
+__init__	../icalendar/src/icalendar/prop.py	/^    def __init__(self, dt):$/;"	kind:member	line:340
+__init__	../icalendar/src/icalendar/prop.py	/^    def __init__(self, dt):$/;"	kind:member	line:374
+__init__	../icalendar/src/icalendar/prop.py	/^    def __init__(self, dt_list):$/;"	kind:member	line:242
+__init__	../icalendar/src/icalendar/prop.py	/^    def __init__(self, geo):$/;"	kind:member	line:771
+__init__	../icalendar/src/icalendar/prop.py	/^    def __init__(self, obj):$/;"	kind:member	line:140
+__init__	../icalendar/src/icalendar/prop.py	/^    def __init__(self, offset, name):$/;"	kind:member	line:95
+__init__	../icalendar/src/icalendar/prop.py	/^    def __init__(self, per):$/;"	kind:member	line:487
+__init__	../icalendar/src/icalendar/prop.py	/^    def __init__(self, td):$/;"	kind:member	line:434
+__init__	../icalendar/src/icalendar/prop.py	/^    def __init__(self, td):$/;"	kind:member	line:804
+__init__.py	../icalendar/src/icalendar/__init__.py	1;"	kind:file	line:1
+__init__.py	../icalendar/src/icalendar/tests/__init__.py	1;"	kind:file	line:1
+__new__	../icalendar/src/icalendar/parser.py	/^    def __new__(cls, value, strict=False, encoding=DEFAULT_ENCODING):$/;"	kind:member	line:292
+__new__	../icalendar/src/icalendar/prop.py	/^    def __new__(cls, *args, **kwargs):$/;"	kind:member	line:163
+__new__	../icalendar/src/icalendar/prop.py	/^    def __new__(cls, *args, **kwargs):$/;"	kind:member	line:204
+__new__	../icalendar/src/icalendar/prop.py	/^    def __new__(cls, *args, **kwargs):$/;"	kind:member	line:223
+__new__	../icalendar/src/icalendar/prop.py	/^    def __new__(cls, value, encoding=DEFAULT_ENCODING):$/;"	kind:member	line:184
+__new__	../icalendar/src/icalendar/prop.py	/^    def __new__(cls, value, encoding=DEFAULT_ENCODING):$/;"	kind:member	line:563
+__new__	../icalendar/src/icalendar/prop.py	/^    def __new__(cls, value, encoding=DEFAULT_ENCODING):$/;"	kind:member	line:604
+__new__	../icalendar/src/icalendar/prop.py	/^    def __new__(cls, value, encoding=DEFAULT_ENCODING):$/;"	kind:member	line:701
+__new__	../icalendar/src/icalendar/prop.py	/^    def __new__(cls, value, encoding=DEFAULT_ENCODING):$/;"	kind:member	line:750
+__new__	../icalendar/src/icalendar/prop.py	/^    def __new__(cls, value, encoding=DEFAULT_ENCODING):$/;"	kind:member	line:856
+__nonzero__	../icalendar/src/icalendar/cal.py	/^    __nonzero__ = __bool__$/;"	kind:variable	line:104
+__repr__	../icalendar/src/icalendar/cal.py	/^    def __repr__(self):$/;"	kind:member	line:429
+__repr__	../icalendar/src/icalendar/caselessdict.py	/^    def __repr__(self):$/;"	kind:member	line:87
+__repr__	../icalendar/src/icalendar/prop.py	/^    def __repr__(self):$/;"	kind:member	line:144
+__repr__	../icalendar/src/icalendar/prop.py	/^    def __repr__(self):$/;"	kind:member	line:190
+__repr__	../icalendar/src/icalendar/prop.py	/^    def __repr__(self):$/;"	kind:member	line:548
+__repr__	../icalendar/src/icalendar/prop.py	/^    def __repr__(self):$/;"	kind:member	line:708
+__setitem__	../icalendar/src/icalendar/caselessdict.py	/^    def __setitem__(self, key, value):$/;"	kind:member	line:44
+__version__	../icalendar/src/icalendar/__init__.py	/^__version__ = '4.0.2.dev0'$/;"	kind:variable	line:2
+_decode	../icalendar/src/icalendar/cal.py	/^    def _decode(self, name, value):$/;"	kind:member	line:209
+_encode	../icalendar/src/icalendar/cal.py	/^    def _encode(self, name, value, parameters=None, encode=1):$/;"	kind:member	line:118
+_extract_offsets	../icalendar/src/icalendar/cal.py	/^    def _extract_offsets(component, tzname):$/;"	kind:member	line:520
+_final_parts	../icalendar/bootstrap.py	/^    _final_parts = '*final-', '*final'$/;"	kind:variable	line:128
+_final_version	../icalendar/bootstrap.py	/^    def _final_version(parsed_version):$/;"	kind:function	line:130
+_format_attendees	../icalendar/src/icalendar/cli.py	/^def _format_attendees(attendees):$/;"	kind:function	line:43
+_format_name	../icalendar/src/icalendar/cli.py	/^def _format_name(address):$/;"	kind:function	line:26
+_isdst	../icalendar/src/icalendar/prop.py	/^    def _isdst(self, dt):$/;"	kind:member	line:127
+_make_unique_tzname	../icalendar/src/icalendar/cal.py	/^    def _make_unique_tzname(tzname, tznames):$/;"	kind:member	line:569
+_marker	../icalendar/src/icalendar/cal.py	/^_marker = []$/;"	kind:variable	line:57
+_test_quoting	../icalendar/src/icalendar/tests/test_property_params.py	/^    def _test_quoting(self, cn_param, cn_quoted):$/;"	kind:member	line:62
+_timezone_cache	../icalendar/src/icalendar/timezone_cache.py	/^_timezone_cache = {}$/;"	kind:variable	line:3
+_version_re	../icalendar/setup.py	/^_version_re = re.compile(r'__version__\\s+=\\s+(.*)')$/;"	kind:variable	line:7
+_walk	../icalendar/src/icalendar/cal.py	/^    def _walk(self, name):$/;"	kind:member	line:272
+add	../icalendar/src/icalendar/cal.py	/^    def add(self, name, value, parameters=None, encode=1):$/;"	kind:member	line:156
+add_component	../icalendar/src/icalendar/cal.py	/^    def add_component(self, component):$/;"	kind:member	line:267
+author	../icalendar/setup.py	/^    author='Plone Foundation',$/;"	kind:variable	line:50
+author_email	../icalendar/setup.py	/^    author_email='plone-developers@lists.sourceforge.net',$/;"	kind:variable	line:51
+best	../icalendar/bootstrap.py	/^                    best = [dist]$/;"	kind:variable	line:147
+best	../icalendar/bootstrap.py	/^        best = []$/;"	kind:variable	line:141
+bestv	../icalendar/bootstrap.py	/^                    bestv = distv$/;"	kind:variable	line:148
+bestv	../icalendar/bootstrap.py	/^        bestv = None$/;"	kind:variable	line:142
+bootstrap.py	../icalendar/bootstrap.py	1;"	kind:file	line:1
+bytes_type	../icalendar/src/icalendar/compat.py	/^    bytes_type = bytes$/;"	kind:variable	line:11
+bytes_type	../icalendar/src/icalendar/compat.py	/^    bytes_type = str$/;"	kind:variable	line:7
+cal.py	../icalendar/src/icalendar/cal.py	1;"	kind:file	line:1
+canonical_order	../icalendar/src/icalendar/cal.py	/^    canonical_order = ($/;"	kind:variable	line:447
+canonical_order	../icalendar/src/icalendar/cal.py	/^    canonical_order = ('TZID',)$/;"	kind:variable	line:515
+canonical_order	../icalendar/src/icalendar/cal.py	/^    canonical_order = ('VERSION', 'PRODID', 'CALSCALE', 'METHOD',)$/;"	kind:variable	line:685
+canonical_order	../icalendar/src/icalendar/caselessdict.py	/^    canonical_order = None$/;"	kind:variable	line:95
+canonical_order	../icalendar/src/icalendar/prop.py	/^    canonical_order = ("FREQ", "UNTIL", "COUNT", "INTERVAL",$/;"	kind:variable	line:632
+canonsort_items	../icalendar/src/icalendar/caselessdict.py	/^def canonsort_items(dict1, canonical_order=None):$/;"	kind:function	line:18
+canonsort_keys	../icalendar/src/icalendar/caselessdict.py	/^def canonsort_keys(keys, canonical_order=None):$/;"	kind:function	line:8
+caselessdict.py	../icalendar/src/icalendar/caselessdict.py	1;"	kind:file	line:1
+chars	../icalendar/src/icalendar/tools.py	/^    chars = list(ascii_letters + digits)$/;"	kind:variable	line:16
+classifiers	../icalendar/setup.py	/^    classifiers=[$/;"	kind:variable	line:33
+cli.py	../icalendar/src/icalendar/cli.py	1;"	kind:file	line:1
+cmd	../icalendar/bootstrap.py	/^cmd = [sys.executable, '-c',$/;"	kind:variable	line:107
+compat.py	../icalendar/src/icalendar/compat.py	1;"	kind:file	line:1
+component_factory	../icalendar/src/icalendar/cal.py	/^component_factory = ComponentFactory()$/;"	kind:variable	line:691
+conf.py	../icalendar/docs/conf.py	1;"	kind:file	line:1
+content_line	../icalendar/src/icalendar/cal.py	/^    def content_line(self, name, value, sorted=True):$/;"	kind:member	line:404
+content_lines	../icalendar/src/icalendar/cal.py	/^    def content_lines(self, sorted=True):$/;"	kind:member	line:410
+copy	../icalendar/src/icalendar/caselessdict.py	/^    def copy(self):$/;"	kind:member	line:84
+copyright	../icalendar/docs/conf.py	/^copyright = u'{}, Plone Foundation'.format(this_year)$/;"	kind:variable	line:31
+data_encode	../icalendar/src/icalendar/parser_tools.py	/^def data_encode(data, encoding=DEFAULT_ENCODING):$/;"	kind:function	line:22
+decoded	../icalendar/src/icalendar/cal.py	/^    def decoded(self, name, default=_marker):$/;"	kind:member	line:227
+description	../icalendar/setup.py	/^    description=shortdesc,$/;"	kind:variable	line:31
+dest	../icalendar/bootstrap.py	/^                  dest='accept_buildout_test_releases',$/;"	kind:variable	line:46
+distv	../icalendar/bootstrap.py	/^            distv = dist.parsed_version$/;"	kind:variable	line:144
+dquote	../icalendar/src/icalendar/parser.py	/^def dquote(val):$/;"	kind:function	line:142
+dst	../icalendar/src/icalendar/prop.py	/^    def dst(self, dt):$/;"	kind:member	line:105
+dst	../icalendar/src/icalendar/prop.py	/^    def dst(self, dt):$/;"	kind:member	line:118
+escape_char	../icalendar/src/icalendar/parser.py	/^def escape_char(text):$/;"	kind:function	line:20
+escape_string	../icalendar/src/icalendar/parser.py	/^def escape_string(val):$/;"	kind:function	line:267
+exclude_patterns	../icalendar/docs/conf.py	/^exclude_patterns = ['_build', 'lib', 'bin', 'include', 'local']$/;"	kind:variable	line:35
+exclusive	../icalendar/src/icalendar/cal.py	/^    exclusive = ('DTEND', 'DURATION',)$/;"	kind:variable	line:460
+exclusive	../icalendar/src/icalendar/cal.py	/^    exclusive = ('DUE', 'DURATION',)$/;"	kind:variable	line:479
+exclusive	../icalendar/src/icalendar/cal.py	/^    exclusive = ()      # These properties are mutually exclusive$/;"	kind:variable	line:70
+extensions	../icalendar/docs/conf.py	/^extensions = [$/;"	kind:variable	line:21
+extras_require	../icalendar/setup.py	/^    extras_require={$/;"	kind:variable	line:61
+ez	../icalendar/bootstrap.py	/^ez = {}$/;"	kind:variable	line:77
+find_links	../icalendar/bootstrap.py	/^find_links = os.environ.get($/;"	kind:variable	line:111
+foldline	../icalendar/src/icalendar/parser.py	/^def foldline(line, limit=75, fold_sep='\\r\\n '):$/;"	kind:function	line:65
+for_property	../icalendar/src/icalendar/prop.py	/^    def for_property(self, name):$/;"	kind:member	line:1008
+frequencies	../icalendar/src/icalendar/prop.py	/^    frequencies = CaselessDict({$/;"	kind:variable	line:594
+frequencies	../icalendar/src/icalendar/prop.py	/^    frequencies = ["SECONDLY", "MINUTELY", "HOURLY", "DAILY", "WEEKLY",$/;"	kind:variable	line:627
+from_ical	../icalendar/src/icalendar/cal.py	/^    def from_ical(cls, st, multiple=False):$/;"	kind:member	line:320
+from_ical	../icalendar/src/icalendar/parser.py	/^    def from_ical(cls, ical, strict=False):$/;"	kind:member	line:358
+from_ical	../icalendar/src/icalendar/parser.py	/^    def from_ical(cls, st):$/;"	kind:member	line:383
+from_ical	../icalendar/src/icalendar/parser.py	/^    def from_ical(cls, st, strict=False):$/;"	kind:member	line:231
+from_ical	../icalendar/src/icalendar/prop.py	/^    def from_ical(cls, ical):$/;"	kind:member	line:174
+from_ical	../icalendar/src/icalendar/prop.py	/^    def from_ical(cls, ical):$/;"	kind:member	line:197
+from_ical	../icalendar/src/icalendar/prop.py	/^    def from_ical(cls, ical):$/;"	kind:member	line:213
+from_ical	../icalendar/src/icalendar/prop.py	/^    def from_ical(cls, ical):$/;"	kind:member	line:232
+from_ical	../icalendar/src/icalendar/prop.py	/^    def from_ical(cls, ical):$/;"	kind:member	line:583
+from_ical	../icalendar/src/icalendar/prop.py	/^    def from_ical(cls, ical):$/;"	kind:member	line:616
+from_ical	../icalendar/src/icalendar/prop.py	/^    def from_ical(cls, ical):$/;"	kind:member	line:679
+from_ical	../icalendar/src/icalendar/prop.py	/^    def from_ical(cls, ical):$/;"	kind:member	line:715
+from_ical	../icalendar/src/icalendar/prop.py	/^    def from_ical(cls, ical):$/;"	kind:member	line:760
+from_ical	../icalendar/src/icalendar/prop.py	/^    def from_ical(cls, ical):$/;"	kind:member	line:832
+from_ical	../icalendar/src/icalendar/prop.py	/^    def from_ical(cls, ical):$/;"	kind:member	line:866
+from_ical	../icalendar/src/icalendar/prop.py	/^    def from_ical(cls, ical, timezone=None):$/;"	kind:member	line:316
+from_ical	../icalendar/src/icalendar/prop.py	/^    def from_ical(ical):$/;"	kind:member	line:151
+from_ical	../icalendar/src/icalendar/prop.py	/^    def from_ical(ical):$/;"	kind:member	line:351
+from_ical	../icalendar/src/icalendar/prop.py	/^    def from_ical(ical):$/;"	kind:member	line:466
+from_ical	../icalendar/src/icalendar/prop.py	/^    def from_ical(ical):$/;"	kind:member	line:539
+from_ical	../icalendar/src/icalendar/prop.py	/^    def from_ical(ical):$/;"	kind:member	line:737
+from_ical	../icalendar/src/icalendar/prop.py	/^    def from_ical(ical):$/;"	kind:member	line:787
+from_ical	../icalendar/src/icalendar/prop.py	/^    def from_ical(ical, timezone=None):$/;"	kind:member	line:263
+from_ical	../icalendar/src/icalendar/prop.py	/^    def from_ical(ical, timezone=None):$/;"	kind:member	line:397
+from_ical	../icalendar/src/icalendar/prop.py	/^    def from_ical(self, name, value):$/;"	kind:member	line:1020
+from_parts	../icalendar/src/icalendar/parser.py	/^    def from_parts(cls, name, params, values, sorted=True):$/;"	kind:member	line:301
+get	../icalendar/src/icalendar/caselessdict.py	/^    def get(self, key, default=None):$/;"	kind:member	line:56
+getHTMLText	../ical.py	/^def getHTMLText():$/;"	kind:function	line:16
+get_inline	../icalendar/src/icalendar/cal.py	/^    def get_inline(self, name, decode=1):$/;"	kind:member	line:248
+has_key	../icalendar/src/icalendar/caselessdict.py	/^    def has_key(self, key):$/;"	kind:member	line:71
+help	../icalendar/bootstrap.py	/^                  help=("Let bootstrap.py use existing site packages"))$/;"	kind:variable	line:61
+help	../icalendar/bootstrap.py	/^                  help=("Normally, if you do not specify a --version, the "$/;"	kind:variable	line:48
+help	../icalendar/bootstrap.py	/^                  help=("Specify a URL to search for buildout releases"))$/;"	kind:variable	line:58
+help	../icalendar/bootstrap.py	/^                  help=("Specify the path to the buildout configuration "$/;"	kind:variable	line:55
+html_theme	../icalendar/docs/conf.py	/^    html_theme = 'default'$/;"	kind:variable	line:14
+html_theme	../icalendar/docs/conf.py	/^    html_theme = 'sphinx_rtd_theme'$/;"	kind:variable	line:11
+html_theme_path	../icalendar/docs/conf.py	/^    html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]$/;"	kind:variable	line:12
+htmlhelp_basename	../icalendar/docs/conf.py	/^htmlhelp_basename = 'icalendardoc'$/;"	kind:variable	line:38
+ical.py	../ical.py	1;"	kind:file	line:1
+ignore_exceptions	../icalendar/src/icalendar/cal.py	/^    ignore_exceptions = False   # if True, and we cannot parse this$/;"	kind:variable	line:73
+ignore_exceptions	../icalendar/src/icalendar/cal.py	/^    ignore_exceptions = True$/;"	kind:variable	line:465
+ignore_exceptions	../icalendar/src/icalendar/prop.py	/^    ignore_exceptions = False   # if True, and we cannot parse this$/;"	kind:variable	line:799
+include_package_data	../icalendar/setup.py	/^    include_package_data=True,$/;"	kind:variable	line:56
+inclusive	../icalendar/src/icalendar/cal.py	/^    inclusive = (('DURATION', 'REPEAT',), ('SUMMARY', 'ATTENDEE',))$/;"	kind:variable	line:677
+inclusive	../icalendar/src/icalendar/cal.py	/^    inclusive = ()      # if any occurs the other(s) MUST occur$/;"	kind:variable	line:71
+index	../icalendar/bootstrap.py	/^    index = setuptools.package_index.PackageIndex($/;"	kind:variable	line:135
+install_requires	../icalendar/setup.py	/^    install_requires=install_requires,$/;"	kind:variable	line:59
+install_requires	../icalendar/setup.py	/^install_requires = [$/;"	kind:variable	line:22
+is_broken	../icalendar/src/icalendar/cal.py	/^    def is_broken(self):$/;"	kind:member	line:112
+is_empty	../icalendar/src/icalendar/cal.py	/^    def is_empty(self):$/;"	kind:member	line:106
+iteritems	../icalendar/src/icalendar/compat.py	/^    iteritems = lambda d, *args, **kwargs: iter(d.items(*args, **kwargs))$/;"	kind:variable	line:12
+iteritems	../icalendar/src/icalendar/compat.py	/^    iteritems = lambda d, *args, **kwargs: iter(d.iteritems(*args, **kwargs))$/;"	kind:variable	line:8
+key	../icalendar/src/icalendar/tests/hypothesis/test_fuzzing.py	/^key = st.text(string.ascii_letters + string.digits, min_size=1)$/;"	kind:variable	line:17
+keywords	../icalendar/setup.py	/^    keywords='calendar calendaring ical icalendar event todo journal '$/;"	kind:variable	line:48
+license	../icalendar/setup.py	/^    license='BSD',$/;"	kind:variable	line:53
+long_description	../icalendar/setup.py	/^    long_description=longdesc,$/;"	kind:variable	line:32
+longdesc	../icalendar/setup.py	/^longdesc = ''$/;"	kind:variable	line:15
+main	../ical.py	/^def main():$/;"	kind:function	line:8
+main	../icalendar/src/icalendar/cli.py	/^def main():$/;"	kind:function	line:77
+man_pages	../icalendar/docs/conf.py	/^man_pages = [$/;"	kind:variable	line:40
+master_doc	../icalendar/docs/conf.py	/^master_doc = 'index'$/;"	kind:variable	line:27
+min_size	../icalendar/src/icalendar/tests/hypothesis/test_fuzzing.py	/^        min_size=1$/;"	kind:variable	line:25
+multiple	../icalendar/src/icalendar/cal.py	/^    multiple = ($/;"	kind:variable	line:461
+multiple	../icalendar/src/icalendar/cal.py	/^    multiple = ($/;"	kind:variable	line:480
+multiple	../icalendar/src/icalendar/cal.py	/^    multiple = ($/;"	kind:variable	line:495
+multiple	../icalendar/src/icalendar/cal.py	/^    multiple = ('ATTENDEE', 'ATTACH')$/;"	kind:variable	line:678
+multiple	../icalendar/src/icalendar/cal.py	/^    multiple = ('ATTENDEE', 'COMMENT', 'FREEBUSY', 'RSTATUS',)$/;"	kind:variable	line:510
+multiple	../icalendar/src/icalendar/cal.py	/^    multiple = ('COMMENT', 'RDATE', 'TZNAME', 'RRULE', 'EXDATE')$/;"	kind:variable	line:658
+multiple	../icalendar/src/icalendar/cal.py	/^    multiple = ()       # may occur more than once$/;"	kind:variable	line:69
+multiple	../icalendar/src/icalendar/cal.py	/^    multiple = TimezoneStandard.multiple$/;"	kind:variable	line:665
+name	../icalendar/setup.py	/^    name='icalendar',$/;"	kind:variable	line:29
+name	../icalendar/src/icalendar/cal.py	/^    name = 'DAYLIGHT'$/;"	kind:variable	line:662
+name	../icalendar/src/icalendar/cal.py	/^    name = 'STANDARD'$/;"	kind:variable	line:655
+name	../icalendar/src/icalendar/cal.py	/^    name = 'VALARM'$/;"	kind:variable	line:670
+name	../icalendar/src/icalendar/cal.py	/^    name = 'VCALENDAR'$/;"	kind:variable	line:684
+name	../icalendar/src/icalendar/cal.py	/^    name = 'VEVENT'$/;"	kind:variable	line:445
+name	../icalendar/src/icalendar/cal.py	/^    name = 'VFREEBUSY'$/;"	kind:variable	line:503
+name	../icalendar/src/icalendar/cal.py	/^    name = 'VJOURNAL'$/;"	kind:variable	line:488
+name	../icalendar/src/icalendar/cal.py	/^    name = 'VTIMEZONE'$/;"	kind:variable	line:514
+name	../icalendar/src/icalendar/cal.py	/^    name = 'VTODO'$/;"	kind:variable	line:470
+name	../icalendar/src/icalendar/cal.py	/^    name = None         # should be defined in each component$/;"	kind:variable	line:66
+on_rtd	../icalendar/docs/conf.py	/^on_rtd = os.environ.get('READTHEDOCS', None) == 'True'$/;"	kind:variable	line:7
+overlaps	../icalendar/src/icalendar/prop.py	/^    def overlaps(self, other):$/;"	kind:member	line:524
+package_dir	../icalendar/setup.py	/^    package_dir={'': 'src'},$/;"	kind:variable	line:55
+packages	../icalendar/setup.py	/^    packages=setuptools.find_packages('src'),$/;"	kind:variable	line:54
+param_value	../icalendar/src/icalendar/parser.py	/^def param_value(value):$/;"	kind:function	line:103
+params	../icalendar/src/icalendar/parser.py	/^    def params(self):$/;"	kind:member	line:190
+parse_type	../icalendar/src/icalendar/prop.py	/^    def parse_type(cls, key, values):$/;"	kind:member	line:673
+parser	../ical.py	/^def parser(doc,infoDictList):$/;"	kind:function	line:21
+parser	../icalendar/bootstrap.py	/^parser = OptionParser(usage=usage)$/;"	kind:variable	line:42
+parser.py	../icalendar/src/icalendar/parser.py	1;"	kind:file	line:1
+parser_tools.py	../icalendar/src/icalendar/parser_tools.py	1;"	kind:file	line:1
+parts	../icalendar/src/icalendar/parser.py	/^    def parts(self):$/;"	kind:member	line:321
+pop	../icalendar/src/icalendar/caselessdict.py	/^    def pop(self, key, default=None):$/;"	kind:member	line:64
+popitem	../icalendar/src/icalendar/caselessdict.py	/^    def popitem(self):$/;"	kind:member	line:68
+printable_characters	../icalendar/src/icalendar/tests/hypothesis/test_fuzzing.py	/^def printable_characters(**kw):$/;"	kind:function	line:10
+project	../icalendar/docs/conf.py	/^project = u'icalendar'$/;"	kind:variable	line:29
+prop.py	../icalendar/src/icalendar/prop.py	1;"	kind:file	line:1
+property_items	../icalendar/src/icalendar/cal.py	/^    def property_items(self, recursive=True, sorted=True):$/;"	kind:member	line:293
+pygments_style	../icalendar/docs/conf.py	/^pygments_style = 'sphinx'$/;"	kind:variable	line:36
+q_join	../icalendar/src/icalendar/parser.py	/^def q_join(lst, sep=','):$/;"	kind:function	line:179
+q_split	../icalendar/src/icalendar/parser.py	/^def q_split(st, sep=',', maxsplit=-1):$/;"	kind:function	line:154
+release	../icalendar/docs/conf.py	/^release = version$/;"	kind:variable	line:33
+req	../icalendar/bootstrap.py	/^    req = pkg_resources.Requirement.parse(requirement)$/;"	kind:variable	line:139
+required	../icalendar/src/icalendar/cal.py	/^    required = ('ACTION', 'TRIGGER',)$/;"	kind:variable	line:672
+required	../icalendar/src/icalendar/cal.py	/^    required = ('DTSTART', 'TZOFFSETTO', 'TZOFFSETFROM')$/;"	kind:variable	line:656
+required	../icalendar/src/icalendar/cal.py	/^    required = ('PRODID', 'VERSION', )$/;"	kind:variable	line:686
+required	../icalendar/src/icalendar/cal.py	/^    required = ('TZID',) # it also requires one of components DAYLIGHT and STANDARD$/;"	kind:variable	line:516
+required	../icalendar/src/icalendar/cal.py	/^    required = ('UID', 'DTSTAMP',)$/;"	kind:variable	line:453
+required	../icalendar/src/icalendar/cal.py	/^    required = ('UID', 'DTSTAMP',)$/;"	kind:variable	line:472
+required	../icalendar/src/icalendar/cal.py	/^    required = ('UID', 'DTSTAMP',)$/;"	kind:variable	line:490
+required	../icalendar/src/icalendar/cal.py	/^    required = ('UID', 'DTSTAMP',)$/;"	kind:variable	line:505
+required	../icalendar/src/icalendar/cal.py	/^    required = ()       # These properties are required$/;"	kind:variable	line:67
+required	../icalendar/src/icalendar/cal.py	/^    required = TimezoneStandard.required$/;"	kind:variable	line:663
+requirement	../icalendar/bootstrap.py	/^requirement = 'zc.buildout'$/;"	kind:variable	line:123
+rnd_string	../icalendar/src/icalendar/tools.py	/^    def rnd_string(self, length=16):$/;"	kind:member	line:18
+setUp	../icalendar/src/icalendar/tests/test_recurrence.py	/^    def setUp(self):$/;"	kind:member	line:13
+setUp	../icalendar/src/icalendar/tests/test_time.py	/^    def setUp(self):$/;"	kind:member	line:11
+set_inline	../icalendar/src/icalendar/cal.py	/^    def set_inline(self, name, values, encode=1):$/;"	kind:member	line:256
+setdefault	../icalendar/src/icalendar/caselessdict.py	/^    def setdefault(self, key, value=None):$/;"	kind:member	line:60
+setup.py	../icalendar/setup.py	1;"	kind:file	line:1
+setup_args	../icalendar/bootstrap.py	/^setup_args = {'to_dir': tmpeggs, 'download_delay': 0}$/;"	kind:variable	line:91
+setuptools_path	../icalendar/bootstrap.py	/^setuptools_path = ws.find($/;"	kind:variable	line:120
+shortdesc	../icalendar/setup.py	/^shortdesc = 'iCalendar parser\/generator'$/;"	kind:variable	line:14
+singletons	../icalendar/src/icalendar/cal.py	/^    singletons = ($/;"	kind:variable	line:454
+singletons	../icalendar/src/icalendar/cal.py	/^    singletons = ($/;"	kind:variable	line:473
+singletons	../icalendar/src/icalendar/cal.py	/^    singletons = ($/;"	kind:variable	line:491
+singletons	../icalendar/src/icalendar/cal.py	/^    singletons = ($/;"	kind:variable	line:506
+singletons	../icalendar/src/icalendar/cal.py	/^    singletons = ($/;"	kind:variable	line:673
+singletons	../icalendar/src/icalendar/cal.py	/^    singletons = ('DTSTART', 'TZOFFSETTO', 'TZOFFSETFROM',)$/;"	kind:variable	line:657
+singletons	../icalendar/src/icalendar/cal.py	/^    singletons = ('PRODID', 'VERSION', 'CALSCALE', 'METHOD')$/;"	kind:variable	line:687
+singletons	../icalendar/src/icalendar/cal.py	/^    singletons = ('TZID', 'LAST-MODIFIED', 'TZURL',)$/;"	kind:variable	line:517
+singletons	../icalendar/src/icalendar/cal.py	/^    singletons = ()     # These properties must only appear once$/;"	kind:variable	line:68
+singletons	../icalendar/src/icalendar/cal.py	/^    singletons = TimezoneStandard.singletons$/;"	kind:variable	line:664
+sorted_items	../icalendar/src/icalendar/caselessdict.py	/^    def sorted_items(self):$/;"	kind:member	line:103
+sorted_keys	../icalendar/src/icalendar/caselessdict.py	/^    def sorted_keys(self):$/;"	kind:member	line:97
+source_suffix	../icalendar/docs/conf.py	/^source_suffix = '.rst'$/;"	kind:variable	line:26
+tearDown	../icalendar/src/icalendar/tests/test_time.py	/^    def tearDown(self):$/;"	kind:member	line:14
+test_CaselessDict	../icalendar/src/icalendar/tests/test_unit_caselessdict.py	/^    def test_CaselessDict(self):$/;"	kind:member	line:70
+test_all	../icalendar/src/icalendar/tests/test_unit_prop.py	/^    def test_all(self):$/;"	kind:member	line:514
+test_apple_xlocation	../icalendar/src/icalendar/tests/test_icalendar.py	/^    def test_apple_xlocation(self):$/;"	kind:member	line:314
+test_broken_property	../icalendar/src/icalendar/tests/test_icalendar.py	/^    def test_broken_property(self):$/;"	kind:member	line:295
+test_cal_Calendar	../icalendar/src/icalendar/tests/test_unit_cal.py	/^    def test_cal_Calendar(self):$/;"	kind:member	line:377
+test_cal_Component	../icalendar/src/icalendar/tests/test_unit_cal.py	/^    def test_cal_Component(self):$/;"	kind:member	line:15
+test_cal_ComponentFactory	../icalendar/src/icalendar/tests/test_unit_cal.py	/^    def test_cal_ComponentFactory(self):$/;"	kind:member	line:363
+test_cal_Component_add	../icalendar/src/icalendar/tests/test_unit_cal.py	/^    def test_cal_Component_add(self):$/;"	kind:member	line:219
+test_cal_Component_add_no_reencode	../icalendar/src/icalendar/tests/test_unit_cal.py	/^    def test_cal_Component_add_no_reencode(self):$/;"	kind:member	line:241
+test_cal_Component_add_property_parameter	../icalendar/src/icalendar/tests/test_unit_cal.py	/^    def test_cal_Component_add_property_parameter(self):$/;"	kind:member	line:254
+test_cal_Component_from_ical	../icalendar/src/icalendar/tests/test_unit_cal.py	/^    def test_cal_Component_from_ical(self):$/;"	kind:member	line:264
+test_cal_Component_to_ical_parameter_order	../icalendar/src/icalendar/tests/test_unit_cal.py	/^    def test_cal_Component_to_ical_parameter_order(self):$/;"	kind:member	line:303
+test_cal_Component_to_ical_property_order	../icalendar/src/icalendar/tests/test_unit_cal.py	/^    def test_cal_Component_to_ical_property_order(self):$/;"	kind:member	line:287
+test_cal_strict_parsing	../icalendar/src/icalendar/tests/test_unit_cal.py	/^    def test_cal_strict_parsing(self):$/;"	kind:member	line:439
+test_caselessdict_canonsort_items	../icalendar/src/icalendar/tests/test_unit_caselessdict.py	/^    def test_caselessdict_canonsort_items(self):$/;"	kind:member	line:41
+test_caselessdict_canonsort_keys	../icalendar/src/icalendar/tests/test_unit_caselessdict.py	/^    def test_caselessdict_canonsort_keys(self):$/;"	kind:member	line:9
+test_caselessdict_copy	../icalendar/src/icalendar/tests/test_unit_caselessdict.py	/^    def test_caselessdict_copy(self):$/;"	kind:member	line:62
+test_contentline_class	../icalendar/src/icalendar/tests/test_icalendar.py	/^    def test_contentline_class(self):$/;"	kind:member	line:38
+test_create_america_new_york	../icalendar/src/icalendar/tests/test_timezoned.py	/^    def test_create_america_new_york(self):$/;"	kind:member	line:151
+test_create_event_simple	../icalendar/src/icalendar/tests/test_encoding.py	/^    def test_create_event_simple(self):$/;"	kind:member	line:70
+test_create_from_ical	../icalendar/src/icalendar/tests/test_encoding.py	/^    def test_create_from_ical(self):$/;"	kind:member	line:14
+test_create_from_ical	../icalendar/src/icalendar/tests/test_time.py	/^    def test_create_from_ical(self):$/;"	kind:member	line:17
+test_create_from_ical	../icalendar/src/icalendar/tests/test_timezoned.py	/^    def test_create_from_ical(self):$/;"	kind:member	line:15
+test_create_pacific_fiji	../icalendar/src/icalendar/tests/test_timezoned.py	/^    def test_create_pacific_fiji(self):$/;"	kind:member	line:187
+test_create_to_ical	../icalendar/src/icalendar/tests/test_encoding.py	/^    def test_create_to_ical(self):$/;"	kind:member	line:35
+test_create_to_ical	../icalendar/src/icalendar/tests/test_time.py	/^    def test_create_to_ical(self):$/;"	kind:member	line:26
+test_create_to_ical	../icalendar/src/icalendar/tests/test_timezoned.py	/^    def test_create_to_ical(self):$/;"	kind:member	line:52
+test_encoding.py	../icalendar/src/icalendar/tests/test_encoding.py	1;"	kind:file	line:1
+test_escaping	../icalendar/src/icalendar/tests/test_property_params.py	/^    def test_escaping(self):$/;"	kind:member	line:77
+test_fixed_issues.py	../icalendar/src/icalendar/tests/test_fixed_issues.py	1;"	kind:file	line:1
+test_fold_line	../icalendar/src/icalendar/tests/test_icalendar.py	/^    def test_fold_line(self):$/;"	kind:member	line:240
+test_fuzzing.py	../icalendar/src/icalendar/tests/hypothesis/test_fuzzing.py	1;"	kind:file	line:1
+test_icalendar.py	../icalendar/src/icalendar/tests/test_icalendar.py	1;"	kind:file	line:1
+test_index_error_issue	../icalendar/src/icalendar/tests/test_fixed_issues.py	/^    def test_index_error_issue(self):$/;"	kind:function	line:367
+test_issue_100	../icalendar/src/icalendar/tests/test_fixed_issues.py	/^    def test_issue_100(self):$/;"	kind:function	line:146
+test_issue_101	../icalendar/src/icalendar/tests/test_fixed_issues.py	/^    def test_issue_101(self):$/;"	kind:function	line:155
+test_issue_104__ignore_exceptions	../icalendar/src/icalendar/tests/test_fixed_issues.py	/^    def test_issue_104__ignore_exceptions(self):$/;"	kind:function	line:185
+test_issue_104__no_ignore_exceptions	../icalendar/src/icalendar/tests/test_fixed_issues.py	/^    def test_issue_104__no_ignore_exceptions(self):$/;"	kind:function	line:211
+test_issue_112	../icalendar/src/icalendar/tests/test_fixed_issues.py	/^    def test_issue_112(self):$/;"	kind:function	line:233
+test_issue_116	../icalendar/src/icalendar/tests/test_fixed_issues.py	/^    def test_issue_116(self):$/;"	kind:function	line:259
+test_issue_142	../icalendar/src/icalendar/tests/test_fixed_issues.py	/^    def test_issue_142(self):$/;"	kind:function	line:289
+test_issue_143	../icalendar/src/icalendar/tests/test_fixed_issues.py	/^    def test_issue_143(self):$/;"	kind:function	line:303
+test_issue_157	../icalendar/src/icalendar/tests/test_fixed_issues.py	/^    def test_issue_157(self):$/;"	kind:function	line:326
+test_issue_168	../icalendar/src/icalendar/tests/test_fixed_issues.py	/^    def test_issue_168(self):$/;"	kind:function	line:344
+test_issue_178	../icalendar/src/icalendar/tests/test_fixed_issues.py	/^    def test_issue_178(self):$/;"	kind:function	line:376
+test_issue_184	../icalendar/src/icalendar/tests/test_fixed_issues.py	/^    def test_issue_184(self):$/;"	kind:function	line:418
+test_issue_237	../icalendar/src/icalendar/tests/test_fixed_issues.py	/^    def test_issue_237(self):$/;"	kind:function	line:438
+test_issue_53	../icalendar/src/icalendar/tests/test_fixed_issues.py	/^    def test_issue_53(self):$/;"	kind:member	line:15
+test_issue_55	../icalendar/src/icalendar/tests/test_fixed_issues.py	/^    def test_issue_55(self):$/;"	kind:member	line:35
+test_issue_58	../icalendar/src/icalendar/tests/test_fixed_issues.py	/^    def test_issue_58(self):$/;"	kind:function	line:60
+test_issue_64	../icalendar/src/icalendar/tests/test_fixed_issues.py	/^    def test_issue_64(self):$/;"	kind:function	line:79
+test_issue_70	../icalendar/src/icalendar/tests/test_fixed_issues.py	/^    def test_issue_70(self):$/;"	kind:function	line:104
+test_issue_82	../icalendar/src/icalendar/tests/test_fixed_issues.py	/^    def test_issue_82(self):$/;"	kind:function	line:129
+test_long_lines	../icalendar/src/icalendar/tests/test_icalendar.py	/^    def test_long_lines(self):$/;"	kind:member	line:13
+test_main	../icalendar/src/icalendar/tests/hypothesis/test_fuzzing.py	/^    def test_main(self, lines):$/;"	kind:member	line:28
+test_multiple	../icalendar/src/icalendar/tests/test_multiple.py	/^    def test_multiple(self):$/;"	kind:member	line:12
+test_multiple.py	../icalendar/src/icalendar/tests/test_multiple.py	1;"	kind:file	line:1
+test_parameters_class	../icalendar/src/icalendar/tests/test_property_params.py	/^    def test_parameters_class(self):$/;"	kind:member	line:105
+test_parse_and_access_property_params	../icalendar/src/icalendar/tests/test_property_params.py	/^    def test_parse_and_access_property_params(self):$/;"	kind:member	line:176
+test_parser_tools_data_encode	../icalendar/src/icalendar/tests/test_unit_parser_tools.py	/^    def test_parser_tools_data_encode(self):$/;"	kind:member	line:23
+test_parser_tools_to_unicode	../icalendar/src/icalendar/tests/test_unit_parser_tools.py	/^    def test_parser_tools_to_unicode(self):$/;"	kind:member	line:11
+test_prop_TypesFactory	../icalendar/src/icalendar/tests/test_unit_prop.py	/^    def test_prop_TypesFactory(self):$/;"	kind:member	line:453
+test_prop_vBinary	../icalendar/src/icalendar/tests/test_unit_prop.py	/^    def test_prop_vBinary(self):$/;"	kind:member	line:18
+test_prop_vBoolean	../icalendar/src/icalendar/tests/test_unit_prop.py	/^    def test_prop_vBoolean(self):$/;"	kind:member	line:43
+test_prop_vCalAddress	../icalendar/src/icalendar/tests/test_unit_prop.py	/^    def test_prop_vCalAddress(self):$/;"	kind:member	line:53
+test_prop_vDDDLists	../icalendar/src/icalendar/tests/test_unit_prop.py	/^    def test_prop_vDDDLists(self):$/;"	kind:member	line:76
+test_prop_vDDDTypes	../icalendar/src/icalendar/tests/test_unit_prop.py	/^    def test_prop_vDDDTypes(self):$/;"	kind:member	line:100
+test_prop_vDate	../icalendar/src/icalendar/tests/test_unit_prop.py	/^    def test_prop_vDate(self):$/;"	kind:member	line:118
+test_prop_vDatetime	../icalendar/src/icalendar/tests/test_unit_prop.py	/^    def test_prop_vDatetime(self):$/;"	kind:member	line:128
+test_prop_vDuration	../icalendar/src/icalendar/tests/test_unit_prop.py	/^    def test_prop_vDuration(self):$/;"	kind:member	line:164
+test_prop_vFloat	../icalendar/src/icalendar/tests/test_unit_prop.py	/^    def test_prop_vFloat(self):$/;"	kind:member	line:64
+test_prop_vFrequency	../icalendar/src/icalendar/tests/test_unit_prop.py	/^    def test_prop_vFrequency(self):$/;"	kind:member	line:252
+test_prop_vGeo	../icalendar/src/icalendar/tests/test_unit_prop.py	/^    def test_prop_vGeo(self):$/;"	kind:member	line:386
+test_prop_vInline	../icalendar/src/icalendar/tests/test_unit_prop.py	/^    def test_prop_vInline(self):$/;"	kind:member	line:442
+test_prop_vInt	../icalendar/src/icalendar/tests/test_unit_prop.py	/^    def test_prop_vInt(self):$/;"	kind:member	line:70
+test_prop_vPeriod	../icalendar/src/icalendar/tests/test_unit_prop.py	/^    def test_prop_vPeriod(self):$/;"	kind:member	line:195
+test_prop_vRecur	../icalendar/src/icalendar/tests/test_unit_prop.py	/^    def test_prop_vRecur(self):$/;"	kind:member	line:259
+test_prop_vText	../icalendar/src/icalendar/tests/test_unit_prop.py	/^    def test_prop_vText(self):$/;"	kind:member	line:335
+test_prop_vTime	../icalendar/src/icalendar/tests/test_unit_prop.py	/^    def test_prop_vTime(self):$/;"	kind:member	line:369
+test_prop_vUTCOffset	../icalendar/src/icalendar/tests/test_unit_prop.py	/^    def test_prop_vUTCOffset(self):$/;"	kind:member	line:402
+test_prop_vUri	../icalendar/src/icalendar/tests/test_unit_prop.py	/^    def test_prop_vUri(self):$/;"	kind:member	line:378
+test_prop_vWeekday	../icalendar/src/icalendar/tests/test_unit_prop.py	/^    def test_prop_vWeekday(self):$/;"	kind:member	line:240
+test_property_params	../icalendar/src/icalendar/tests/test_property_params.py	/^    def test_property_params(self):$/;"	kind:member	line:16
+test_property_params.py	../icalendar/src/icalendar/tests/test_property_params.py	1;"	kind:file	line:1
+test_q_join	../icalendar/src/icalendar/tests/test_icalendar.py	/^    def test_q_join(self):$/;"	kind:member	line:287
+test_q_split	../icalendar/src/icalendar/tests/test_icalendar.py	/^    def test_q_split(self):$/;"	kind:member	line:275
+test_q_split_bin	../icalendar/src/icalendar/tests/test_icalendar.py	/^    def test_q_split_bin(self):$/;"	kind:member	line:280
+test_quoting	../icalendar/src/icalendar/tests/test_property_params.py	/^    def test_quoting(self):$/;"	kind:member	line:51
+test_rdate	../icalendar/src/icalendar/tests/test_timezoned.py	/^    def test_rdate(self):$/;"	kind:member	line:344
+test_recurrence.py	../icalendar/src/icalendar/tests/test_recurrence.py	1;"	kind:file	line:1
+test_recurrence_exdates_multiple_lines	../icalendar/src/icalendar/tests/test_recurrence.py	/^    def test_recurrence_exdates_multiple_lines(self):$/;"	kind:member	line:47
+test_recurrence_exdates_one_line	../icalendar/src/icalendar/tests/test_recurrence.py	/^    def test_recurrence_exdates_one_line(self):$/;"	kind:member	line:19
+test_repr	../icalendar/src/icalendar/tests/test_property_params.py	/^    def test_repr(self):$/;"	kind:function	line:212
+test_repr	../icalendar/src/icalendar/tests/test_unit_cal.py	/^    def test_repr(self):$/;"	kind:member	line:318
+test_same_start_date	../icalendar/src/icalendar/tests/test_timezoned.py	/^    def test_same_start_date(self):$/;"	kind:member	line:324
+test_same_start_date_and_offset	../icalendar/src/icalendar/tests/test_timezoned.py	/^    def test_same_start_date_and_offset(self):$/;"	kind:member	line:334
+test_suite	../icalendar/setup.py	/^    test_suite='icalendar.tests'$/;"	kind:variable	line:64
+test_time.py	../icalendar/src/icalendar/tests/test_time.py	1;"	kind:file	line:1
+test_timezoned.py	../icalendar/src/icalendar/tests/test_timezoned.py	1;"	kind:file	line:1
+test_tools_UIDGenerator	../icalendar/src/icalendar/tests/test_unit_tools.py	/^    def test_tools_UIDGenerator(self):$/;"	kind:member	line:8
+test_tzinfo_dateutil	../icalendar/src/icalendar/tests/test_timezoned.py	/^    def test_tzinfo_dateutil(self):$/;"	kind:member	line:135
+test_unicode_param	../icalendar/src/icalendar/tests/test_property_params.py	/^    def test_unicode_param(self):$/;"	kind:member	line:36
+test_unicode_parameter_name	../icalendar/src/icalendar/tests/test_encoding.py	/^    def test_unicode_parameter_name(self):$/;"	kind:member	line:81
+test_unit_cal.py	../icalendar/src/icalendar/tests/test_unit_cal.py	1;"	kind:file	line:1
+test_unit_caselessdict.py	../icalendar/src/icalendar/tests/test_unit_caselessdict.py	1;"	kind:file	line:1
+test_unit_parser_tools.py	../icalendar/src/icalendar/tests/test_unit_parser_tools.py	1;"	kind:file	line:1
+test_unit_prop.py	../icalendar/src/icalendar/tests/test_unit_prop.py	1;"	kind:file	line:1
+test_unit_tools.py	../icalendar/src/icalendar/tests/test_unit_tools.py	1;"	kind:file	line:1
+test_vDDDLists_timezone	../icalendar/src/icalendar/tests/test_unit_prop.py	/^    def test_vDDDLists_timezone(self):$/;"	kind:member	line:485
+test_value_double_quoting	../icalendar/src/icalendar/tests/test_icalendar.py	/^    def test_value_double_quoting(self):$/;"	kind:member	line:269
+test_windows_timezone	../icalendar/src/icalendar/tests/test_unit_prop.py	/^    def test_windows_timezone(self):$/;"	kind:member	line:507
+tests_require	../icalendar/setup.py	/^tests_require = []$/;"	kind:variable	line:21
+this_year	../icalendar/docs/conf.py	/^this_year = datetime.date.today().year$/;"	kind:variable	line:30
+timezone_cache.py	../icalendar/src/icalendar/timezone_cache.py	1;"	kind:file	line:1
+tmpeggs	../icalendar/bootstrap.py	/^tmpeggs = tempfile.mkdtemp()$/;"	kind:variable	line:28
+to_ical	../icalendar/src/icalendar/cal.py	/^    def to_ical(self, sorted=True):$/;"	kind:member	line:420
+to_ical	../icalendar/src/icalendar/parser.py	/^    def to_ical(self):$/;"	kind:member	line:365
+to_ical	../icalendar/src/icalendar/parser.py	/^    def to_ical(self):$/;"	kind:member	line:377
+to_ical	../icalendar/src/icalendar/parser.py	/^    def to_ical(self, sorted=True):$/;"	kind:member	line:215
+to_ical	../icalendar/src/icalendar/prop.py	/^    def to_ical(self):$/;"	kind:member	line:147
+to_ical	../icalendar/src/icalendar/prop.py	/^    def to_ical(self):$/;"	kind:member	line:168
+to_ical	../icalendar/src/icalendar/prop.py	/^    def to_ical(self):$/;"	kind:member	line:193
+to_ical	../icalendar/src/icalendar/prop.py	/^    def to_ical(self):$/;"	kind:member	line:209
+to_ical	../icalendar/src/icalendar/prop.py	/^    def to_ical(self):$/;"	kind:member	line:228
+to_ical	../icalendar/src/icalendar/prop.py	/^    def to_ical(self):$/;"	kind:member	line:258
+to_ical	../icalendar/src/icalendar/prop.py	/^    def to_ical(self):$/;"	kind:member	line:300
+to_ical	../icalendar/src/icalendar/prop.py	/^    def to_ical(self):$/;"	kind:member	line:346
+to_ical	../icalendar/src/icalendar/prop.py	/^    def to_ical(self):$/;"	kind:member	line:378
+to_ical	../icalendar/src/icalendar/prop.py	/^    def to_ical(self):$/;"	kind:member	line:440
+to_ical	../icalendar/src/icalendar/prop.py	/^    def to_ical(self):$/;"	kind:member	line:531
+to_ical	../icalendar/src/icalendar/prop.py	/^    def to_ical(self):$/;"	kind:member	line:579
+to_ical	../icalendar/src/icalendar/prop.py	/^    def to_ical(self):$/;"	kind:member	line:612
+to_ical	../icalendar/src/icalendar/prop.py	/^    def to_ical(self):$/;"	kind:member	line:658
+to_ical	../icalendar/src/icalendar/prop.py	/^    def to_ical(self):$/;"	kind:member	line:711
+to_ical	../icalendar/src/icalendar/prop.py	/^    def to_ical(self):$/;"	kind:member	line:733
+to_ical	../icalendar/src/icalendar/prop.py	/^    def to_ical(self):$/;"	kind:member	line:756
+to_ical	../icalendar/src/icalendar/prop.py	/^    def to_ical(self):$/;"	kind:member	line:783
+to_ical	../icalendar/src/icalendar/prop.py	/^    def to_ical(self):$/;"	kind:member	line:810
+to_ical	../icalendar/src/icalendar/prop.py	/^    def to_ical(self):$/;"	kind:member	line:862
+to_ical	../icalendar/src/icalendar/prop.py	/^    def to_ical(self, name, value):$/;"	kind:member	line:1013
+to_tz	../icalendar/src/icalendar/cal.py	/^    def to_tz(self):$/;"	kind:member	line:580
+to_unicode	../icalendar/src/icalendar/parser_tools.py	/^def to_unicode(value, encoding='utf-8'):$/;"	kind:function	line:9
+tools.py	../icalendar/src/icalendar/tools.py	1;"	kind:file	line:1
+types	../icalendar/src/icalendar/prop.py	/^    types = CaselessDict({$/;"	kind:variable	line:637
+types_factory	../icalendar/src/icalendar/cal.py	/^types_factory = TypesFactory()$/;"	kind:variable	line:690
+types_map	../icalendar/src/icalendar/prop.py	/^    types_map = CaselessDict({$/;"	kind:variable	line:925
+tzid_from_dt	../icalendar/src/icalendar/parser.py	/^def tzid_from_dt(dt):$/;"	kind:function	line:52
+tzname	../icalendar/src/icalendar/prop.py	/^    def tzname(self, dt):$/;"	kind:member	line:102
+tzname	../icalendar/src/icalendar/prop.py	/^    def tzname(self, dt):$/;"	kind:member	line:124
+tzutc	../icalendar/src/icalendar/prop.py	/^    tzutc = None$/;"	kind:variable	line:47
+uFOLD	../icalendar/src/icalendar/parser.py	/^uFOLD = re.compile('(\\r?\\n)+[ \\t]')$/;"	kind:variable	line:120
+uid	../icalendar/src/icalendar/tools.py	/^    def uid(self, host_name='example.com', unique=''):$/;"	kind:member	line:23
+unescape_char	../icalendar/src/icalendar/parser.py	/^def unescape_char(text):$/;"	kind:function	line:33
+unescape_list_or_string	../icalendar/src/icalendar/parser.py	/^def unescape_list_or_string(val):$/;"	kind:function	line:278
+unescape_string	../icalendar/src/icalendar/parser.py	/^def unescape_string(val):$/;"	kind:function	line:273
+unicode_type	../icalendar/src/icalendar/compat.py	/^    unicode_type = str$/;"	kind:variable	line:10
+unicode_type	../icalendar/src/icalendar/compat.py	/^    unicode_type = unicode$/;"	kind:variable	line:6
+update	../icalendar/src/icalendar/caselessdict.py	/^    def update(self, *args, **kwargs):$/;"	kind:member	line:75
+url	../icalendar/setup.py	/^    url='https:\/\/github.com\/collective\/icalendar',$/;"	kind:variable	line:52
+utcoffset	../icalendar/src/icalendar/prop.py	/^    def utcoffset(self, dt):$/;"	kind:member	line:112
+utcoffset	../icalendar/src/icalendar/prop.py	/^    def utcoffset(self, dt):$/;"	kind:member	line:99
+vBinary	../icalendar/src/icalendar/prop.py	/^class vBinary(object):$/;"	kind:class	line:136
+vBoolean	../icalendar/src/icalendar/prop.py	/^class vBoolean(int):$/;"	kind:class	line:158
+vCalAddress	../icalendar/src/icalendar/prop.py	/^class vCalAddress(compat.unicode_type):$/;"	kind:class	line:181
+vDDDLists	../icalendar/src/icalendar/prop.py	/^class vDDDLists(object):$/;"	kind:class	line:239
+vDDDTypes	../icalendar/src/icalendar/prop.py	/^class vDDDTypes(object):$/;"	kind:class	line:271
+vDate	../icalendar/src/icalendar/prop.py	/^class vDate(object):$/;"	kind:class	line:337
+vDatetime	../icalendar/src/icalendar/prop.py	/^class vDatetime(object):$/;"	kind:class	line:363
+vDuration	../icalendar/src/icalendar/prop.py	/^class vDuration(object):$/;"	kind:class	line:429
+vFloat	../icalendar/src/icalendar/prop.py	/^class vFloat(float):$/;"	kind:class	line:201
+vFrequency	../icalendar/src/icalendar/prop.py	/^class vFrequency(compat.unicode_type):$/;"	kind:class	line:590
+vGeo	../icalendar/src/icalendar/prop.py	/^class vGeo(object):$/;"	kind:class	line:767
+vInline	../icalendar/src/icalendar/prop.py	/^class vInline(compat.unicode_type):$/;"	kind:class	line:851
+vInt	../icalendar/src/icalendar/prop.py	/^class vInt(int):$/;"	kind:class	line:220
+vPeriod	../icalendar/src/icalendar/prop.py	/^class vPeriod(object):$/;"	kind:class	line:484
+vRecur	../icalendar/src/icalendar/prop.py	/^class vRecur(CaselessDict):$/;"	kind:class	line:623
+vText	../icalendar/src/icalendar/prop.py	/^class vText(compat.unicode_type):$/;"	kind:class	line:697
+vTime	../icalendar/src/icalendar/prop.py	/^class vTime(object):$/;"	kind:class	line:720
+vUTCOffset	../icalendar/src/icalendar/prop.py	/^class vUTCOffset(object):$/;"	kind:class	line:795
+vUri	../icalendar/src/icalendar/prop.py	/^class vUri(compat.unicode_type):$/;"	kind:class	line:746
+vWeekday	../icalendar/src/icalendar/prop.py	/^class vWeekday(compat.unicode_type):$/;"	kind:class	line:556
+validate_param_value	../icalendar/src/icalendar/parser.py	/^def validate_param_value(value, quoted=True):$/;"	kind:function	line:131
+validate_token	../icalendar/src/icalendar/parser.py	/^def validate_token(name):$/;"	kind:function	line:124
+value	../icalendar/src/icalendar/tests/hypothesis/test_fuzzing.py	/^value = printable_characters(blacklist_characters='\\\\;:\\"')$/;"	kind:variable	line:18
+version	../icalendar/bootstrap.py	/^            version = best[-1].version$/;"	kind:variable	line:153
+version	../icalendar/bootstrap.py	/^version = options.version$/;"	kind:variable	line:124
+version	../icalendar/docs/conf.py	/^version = pkg_resources.get_distribution('icalendar').version$/;"	kind:variable	line:32
+version	../icalendar/setup.py	/^    version = str(ast.literal_eval(_version_re.search($/;"	kind:variable	line:10
+version	../icalendar/setup.py	/^    version=version,$/;"	kind:variable	line:30
+view	../icalendar/src/icalendar/cli.py	/^def view(input_handle, output_handle):$/;"	kind:function	line:55
+walk	../icalendar/src/icalendar/cal.py	/^    def walk(self, name=None):$/;"	kind:member	line:282
+week_days	../icalendar/src/icalendar/prop.py	/^    week_days = CaselessDict({$/;"	kind:variable	line:559
+windows_to_olson.py	../icalendar/src/icalendar/windows_to_olson.py	1;"	kind:file	line:1
+ws	../icalendar/bootstrap.py	/^ws = pkg_resources.working_set$/;"	kind:variable	line:105
+zip_safe	../icalendar/setup.py	/^    zip_safe=False,$/;"	kind:variable	line:57

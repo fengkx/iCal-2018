@@ -1,0 +1,7 @@
+{
+    "python.pythonPath": "/home/fengkx/.pyenv/versions/ical-3.5.2/bin/python",
+    "python.autoComplete.extraPaths": [
+        "${env.SPARK_HOME}/python",
+        "${env.SPARK_HOME}/python/pyspark"
+    ]
+}
