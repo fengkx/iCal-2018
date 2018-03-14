@@ -3,65 +3,80 @@
 from bs4 import BeautifulSoup
 import re
 from icalendar import Calendar, Event
-from datetime import datetime
+from datetime import datetime, timedelta
+import pytz, tempfile, os
+
 
 Week = ('一', '二', '三', '四', '五', '六', '日')
-Time=[(datetime(2018, 2, 26, 8, 30, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 2, 26, 9, 20, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 2, 26, 10, 20, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 2, 26, 11, 10, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 2, 26, 14, 30, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 2, 26, 15, 20, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 2, 26, 16, 10, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 2, 26, 17, 00, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 2, 26, 19, 00, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 2, 26, 19, 50, tzinfo=pytz.timezone("Asia/Shanghai"))
-)
-,(
-datetime(2018, 2, 27, 8, 30, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 2, 27, 9, 20, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 2, 27, 10, 20, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 2, 27, 11, 10, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 2, 27, 14, 30, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 2, 27, 15, 20, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 2, 27, 16, 10, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 2, 27, 17, 00, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 2, 27, 19, 00, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 2, 27, 19, 50, tzinfo=pytz.timezone("Asia/Shanghai"))
-),(
-datetime(2018, 2, 28, 8, 30, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 2, 28, 9, 20, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 2, 28, 10, 20, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 2, 28, 11, 10, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 2, 28, 14, 30, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 2, 28, 15, 20, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 2, 28, 16, 10, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 2, 28, 17, 00, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 2, 28, 19, 00, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 2, 28, 19, 50, tzinfo=pytz.timezone("Asia/Shanghai"))
-),(
-datetime(2018, 3, 1, 8, 30, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 3, 1, 9, 20, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 3, 1, 10, 20, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 3, 1, 11, 10, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 3, 1, 14, 30, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 3, 1, 15, 20, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 3, 1, 16, 10, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 3, 1, 17, 00, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 3, 1, 19, 00, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 3, 1, 19, 50, tzinfo=pytz.timezone("Asia/Shanghai"))
-),(
-datetime(2018, 3, 2 8, 30, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 3, 2 9, 20, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 3, 2 10, 20, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 3, 2 11, 10, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 3, 2 14, 30, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 3, 2 15, 20, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 3, 2 16, 10, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 3, 2 17, 00, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 3, 2 19, 00, tzinfo=pytz.timezone("Asia/Shanghai")),
-datetime(2018, 3, 2 19, 50, tzinfo=pytz.timezone("Asia/Shanghai"))
-)]
+Time=[[datetime(2018, 2, 26, 8, 30),
+datetime(2018, 2, 26, 9, 20),
+datetime(2018, 2, 26, 10, 20),
+datetime(2018, 2, 26, 11, 10),
+datetime(2018, 2, 26, 14, 30),
+datetime(2018, 2, 26, 15, 20),
+datetime(2018, 2, 26, 16, 10),
+datetime(2018, 2, 26, 17, 00),
+datetime(2018, 2, 26, 19, 00),
+datetime(2018, 2, 26, 19, 50)
+]
+,[
+datetime(2018, 2, 27, 8, 30),
+datetime(2018, 2, 27, 9, 20),
+datetime(2018, 2, 27, 10, 20),
+datetime(2018, 2, 27, 11, 10),
+datetime(2018, 2, 27, 14, 30),
+datetime(2018, 2, 27, 15, 20),
+datetime(2018, 2, 27, 16, 10),
+datetime(2018, 2, 27, 17, 00),
+datetime(2018, 2, 27, 19, 00),
+datetime(2018, 2, 27, 19, 50)
+],[
+datetime(2018, 2, 28, 8, 30),
+datetime(2018, 2, 28, 9, 20),
+datetime(2018, 2, 28, 10, 20),
+datetime(2018, 2, 28, 11, 10),
+datetime(2018, 2, 28, 14, 30),
+datetime(2018, 2, 28, 15, 20),
+datetime(2018, 2, 28, 16, 10),
+datetime(2018, 2, 28, 17, 00),
+datetime(2018, 2, 28, 19, 00),
+datetime(2018, 2, 28, 19, 50)
+],[
+datetime(2018, 3, 1, 8, 30),
+datetime(2018, 3, 1, 9, 20),
+datetime(2018, 3, 1, 10, 20),
+datetime(2018, 3, 1, 11, 10),
+datetime(2018, 3, 1, 14, 30),
+datetime(2018, 3, 1, 15, 20),
+datetime(2018, 3, 1, 16, 10),
+datetime(2018, 3, 1, 17, 00),
+datetime(2018, 3, 1, 19, 00),
+datetime(2018, 3, 1, 19, 50)
+],[
+datetime(2018, 3, 2, 8, 30),
+datetime(2018, 3, 2, 9, 20),
+datetime(2018, 3, 2, 10, 20),
+datetime(2018, 3, 2, 11, 10),
+datetime(2018, 3, 2, 14, 30),
+datetime(2018, 3, 2, 15, 20),
+datetime(2018, 3, 2, 16, 10),
+datetime(2018, 3, 2, 17, 00),
+datetime(2018, 3, 2, 19, 00),
+datetime(2018, 3, 2, 19, 50)
+]]
+
+# print(Time)
+# print("---------------------------")
+
+TimeEnd=[]
+for day in Time:
+    dayEndList=[]
+    for time in day:
+        time=time + timedelta(minutes=40)
+        # print(time)
+        dayEndList.append(time)
+    TimeEnd.append(dayEndList)
+# print(TimeEnd)
 
 def main():
     code = getHTMLText()
@@ -120,25 +135,38 @@ def parser(doc, infoDictList):
         # print(lesson[2])
         infoDict.update({'周次': (abs(eval(lesson[2][-6:-2]))+1)})
         infoDict.update({'授课教师': lesson[3]})
+        # print(infoDict)
         try:
             infoDict.update({'上课地点': lesson[4]})
         except:
-            continue
+            infoDict.update({'上课地点': '课表没写'})
+        # print(infoDict)
         infoDictList.append(infoDict)
         print(infoDict)
 def make_cal(infoDictList):
     cal=Calendar()
-    event1=Event()
-    i=0
-    for j in infoDictList[i][节数]:    
-        event1.add('summary',infoDictList[i]['课程名称'])
-        event1.add('location',infoDictList[i]['上课地点'])
-        event1.add('description',infoDictList[i]['课程类型']+'\n'+infoDictList[i]['授课教师'])
-        event1.add('dtstart',Time[infoDictList['星期'-1]][j-1])
-        event1.add
+    for i in range(len(infoDictList)):
+        for j in infoDictList[i]['节数']:
+           for c in range(infoDictList[i]['周次']):
+                event1=Event()     
+                event1.add('summary',infoDictList[i]['课程名称'])
+                event1.add('location',infoDictList[i]['上课地点'])
+                event1.add('description',infoDictList[i]['课程类型']+infoDictList[i]['授课教师'])
+                event1.add('dtstart',Time[infoDictList[i]['星期']-1][j-1])
+                event1.add('dtend',TimeEnd[infoDictList[i]['星期']-1][j-1])
+                event1.add('rule','FREQ=WEEKLY')
+                event1.add('rule', 'COUNT='+str(infoDictList[i]['周次']))
+                cal.add_component(event1)
+                Time[infoDictList[i]['星期']-1][j-1]=Time[infoDictList[i]['星期']-1][j-1]+timedelta(days=7)
+                TimeEnd[infoDictList[i]['星期']-1][j-1]=TimeEnd[infoDictList[i]['星期']-1][j-1]+timedelta(days=7)
 
-
-
-
+    # directory = tempfile.mkdtemp()
+    f = open('/home/fengkx/ical/r.ics', 'wb')
+    f.write(cal.to_ical())
+    f.close()
+    
+     
+    # print("sth")
+    
 if __name__ == '__main__':
     main()
